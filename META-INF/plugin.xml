@@ -1,0 +1,54 @@
+<idea-plugin version="2">
+  <id>com.fir.im.android.plugin.id</id>
+  <name>new version fir.im plugin</name>
+  <version>1.1</version>
+  <vendor email="yh@fir.im" url="http://fir.im">fir.im</vendor>
+
+  <description><![CDATA[
+
+      <b>new version fir.im plugin </b>
+      </br>
+      <b>ONLY 2 STEPS To Distribute Beta Applications</b>
+      </br>
+      <b>FIR.im provides beta app distribution services for free in a fast and safe way by 2 steps: upload IPA/APK, download and install by a short URL . FIR is short for Fly It Remotely.</b>
+      </br>
+      <b>fir.im http://fir.im</b>
+      ]]></description>
+
+  <change-notes><![CDATA[
+      new version fir.im uploader.<br>
+      <small>fir.im uploader</small>
+      ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="107.105"/>
+
+  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <application-components>
+    <!-- Add your application components here -->
+      <component>
+          <implementation-class>FirComponent</implementation-class>
+      </component>
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+      <action id="TestFir" class="FirAction" text="fir.im 上传" description="fir.im 一键上传新版" icon="images/icon.png">
+          <add-to-group group-id="MainToolBar" anchor="before" relative-to-action="HelpTopics"/>
+      </action>
+  </actions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+</idea-plugin>
