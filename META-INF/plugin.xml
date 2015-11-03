@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>com.fir.im.android.plugin.id</id>
   <name>new version fir.im plugin</name>
-  <version>1.1</version>
+  <version>1.0</version>
   <vendor email="yh@fir.im" url="http://fir.im">fir.im</vendor>
 
   <description><![CDATA[
